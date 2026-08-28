@@ -1,4 +1,5 @@
 from customtkinter import *
+from datas.hash import *
 
 class Window(CTk):
     def __init__(self):
@@ -12,4 +13,9 @@ class Window(CTk):
         self.sidebar.pack(side='left')
         self.sidebar.pack_propagate(False)
 
+
         CTkLabel(self.sidebar, text='Hash-App', font=("San Francisco", 38, 'bold')).pack(side='top', pady=10) # Title
+
+
+        self.choice_type_hashing = CTkOptionMenu(self.sidebar, values=HASHTYPES, width=300, height=40, font=("San Francisco", 16, 'bold'))
+        self.choice_type_hashing.pack(side='top', pady=30)
