@@ -1,0 +1,46 @@
+# Виртуальное окружение
+venv/
+env/
+ENV/
+.venv
+
+# Файлы байт-кода Python (компилированные)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Распределения / упаковка
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Логи и базы данных
+*.log
+*.sqlite
+*.sqlite3
+db.sqlite3
+
+# IDE и редакторы (общие)
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Файлы окружения (секреты)
+.env
+.env.local
+.env.*.local
