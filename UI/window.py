@@ -43,12 +43,24 @@ class Window(CTk):
         self.button_copy = CTkButton(self, text='Copy Hash', font=("San Francisco", 16, 'bold'), command=self.copy_hash)
         self.button_copy.pack(side='top', pady=30)
 
+        self.input_for_compare_hashes = CTkEntry(self, placeholder_text='Compare hashes', font=("San Francisco", 16, 'bold'), width=300)
+        self.input_for_compare_hashes.pack(side='top', pady=30)
+
+        self.button_compare_hashes = CTkButton(self, text='Compare', font=("San Francisco", 16, 'bold'), command=self.compare_hashes)
+        self.button_compare_hashes.pack(side='top', pady=10)
+
+        self.total_compare = CTkLabel(self, text='', font=("San Francisco", 16, 'bold'))
+        self.total_compare.pack(side='top')
 
         self.button_next = CTkButton(self, text='Start', font=("San Francisco", 16, 'bold'), command=self.click_start)
         self.button_next.pack(side='bottom', pady=30)
 
     def copy_hash(self):
         pyperclip.copy(self.USER_TOTAL_HASH)
+
+    def compare_hashes(self):
+        if self.input_for_compare_hashes.get() == self.USER_TOTAL_HASH: self.total_compare.configure(text='True')
+        else: self.total_compare.configure(text='False')
 
     def click_start(self):
         if self.input_salt_for_hash.get() == "":
