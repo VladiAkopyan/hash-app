@@ -1,5 +1,7 @@
 # 🔐 Hash-App
 
+[](./images/banner.png)
+
 A program for creating password hashes
 
 This is a simple program that allows you to create password hashes from text. Different algorithm options are available to choose from.
