@@ -1,6 +1,6 @@
 # 🔐 Hash-App
 
-[](./images/banner.png)
+![](./images/banner.png)
 
 A program for creating password hashes
 
