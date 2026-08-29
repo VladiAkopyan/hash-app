@@ -27,6 +27,7 @@ wheels/
 .installed.cfg
 *.egg
 *spec
+pyinstaller_downloader.txt
 
 # Логи и базы данных
 *.log
