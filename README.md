@@ -12,9 +12,9 @@ This is a simple program that allows you to create password hashes from text. Di
 - The line/field for comparing hashes has been deleted.
 
 ## Downloads
-[**Windows Version**](https://github.com/VladiAkopyan/hash-app/releases/tag/1.1.0)
+[**Windows Version**](https://github.com/VladiAkopyan/hash-app/releases/tag/1.2.0)
 
 ## Information
 **Developer** - Vladi Akopyan
 
-**Version** - 1.1.0
+**Version** - 1.2.0
