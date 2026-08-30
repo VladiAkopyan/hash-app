@@ -13,19 +13,19 @@ class Window(CTk):
         self.USER_TOTAL_HASH = "You haven't entered anything yet."
 
         self.title("hash-app")
-        self.geometry('1000x700')
+        self.geometry('1400x900')
         self.resizable(False, False)
 
 
-        self.sidebar = CTkFrame(self, width=250, height=700)
-        self.sidebar.pack(side='left')
+        self.sidebar = CTkFrame(self, width=400, height=860, corner_radius=50)
+        self.sidebar.pack(side='left', padx=20)
         self.sidebar.pack_propagate(False)
 
 
         CTkLabel(self.sidebar, text='Hash-App', font=("San Francisco", 38, 'bold')).pack(side='top', pady=10) # Title
 
 
-        self.choice_type_hashing = CTkOptionMenu(self.sidebar, values=HASHTYPES, width=200, height=30, font=("San Francisco", 16, 'bold'))
+        self.choice_type_hashing = CTkOptionMenu(self.sidebar, values=HASHTYPES, width=300, height=30, font=("San Francisco", 16, 'bold'))
         self.choice_type_hashing.pack(side='top', pady=30)
         self.choice_type_hashing.set("Select a hashing algorithm.")
 
@@ -37,17 +37,11 @@ class Window(CTk):
         self.input_salt_for_hash = CTkEntry(self, width=300, placeholder_text="Enter your salt for text (optional)", font=("San Francisco", 16, 'bold'))
         self.input_salt_for_hash.pack(side='top', pady=30)
 
-        self.total_hash = CTkLabel(self, text=f'Your hash:\n{self.USER_TOTAL_HASH}', font=("San Francisco", 10, 'bold'))
+        self.total_hash = CTkLabel(self, text=f'Your hash:\n{self.USER_TOTAL_HASH}', font=("San Francisco", 12, 'bold'))
         self.total_hash.pack(side='top', pady=30)
 
         self.button_copy = CTkButton(self, text='Copy Hash', font=("San Francisco", 16, 'bold'), command=self.copy_hash)
         self.button_copy.pack(side='top', pady=30)
-
-        self.input_for_compare_hashes = CTkEntry(self, placeholder_text='Compare hashes', font=("San Francisco", 16, 'bold'), width=300)
-        self.input_for_compare_hashes.pack(side='top', pady=30)
-
-        self.button_compare_hashes = CTkButton(self, text='Compare', font=("San Francisco", 16, 'bold'), command=self.compare_hashes)
-        self.button_compare_hashes.pack(side='top', pady=10)
 
         self.total_compare = CTkLabel(self, text='', font=("San Francisco", 16, 'bold'))
         self.total_compare.pack(side='top')
@@ -56,7 +50,10 @@ class Window(CTk):
         self.button_next.pack(side='bottom', pady=30)
 
     def copy_hash(self):
-        pyperclip.copy(self.USER_TOTAL_HASH)
+        if self.USER_TOTAL_HASH == "You haven't entered anything yet.":
+            pass
+        else:
+            pyperclip.copy(self.USER_TOTAL_HASH)
 
     def compare_hashes(self):
         if self.input_for_compare_hashes.get() == self.USER_TOTAL_HASH: self.total_compare.configure(text='True')
