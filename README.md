@@ -7,6 +7,10 @@ This is a simple program that allows you to create password hashes from text. Di
 > ⚠ **Warning**<br>
 > This program performs only one task — *hashing data*. It does not provide any other security-related services.
 
+## Program Updates
+- New modified user interface.
+- The line/field for comparing hashes has been deleted.
+
 ## Downloads
 [**Windows Version**](https://github.com/VladiAkopyan/hash-app/releases/tag/1.1.0)
 
