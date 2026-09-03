@@ -1,10 +1,11 @@
-![](./images/banner.png)
+# **Hash-App**
+## Welcome to [Hash-App](https://github.com/VladiAkopyan/hash-app)
 
-A program for creating password hashes
+A program that allows you to create hashes from the text you enter. You also have the option to add a salt to make cracking your hash more difficult.
 
-This is a simple program that allows you to create password hashes from text. Different algorithm options are available to choose from.
+Four hashing algorithms are available: SHA-224, SHA-256, SHA-384, SHA-512.
 
-> ⚠ **Warning**<br>
+> **Warning**<br>
 > This program performs only one task — *hashing data*. It does not provide any other security-related services.
 
 ## Program Updates
@@ -13,8 +14,3 @@ This is a simple program that allows you to create password hashes from text. Di
 
 ## Downloads
 [**Windows Version**](https://github.com/VladiAkopyan/hash-app/releases/tag/1.2.0)
-
-## Information
-**Developer** - Vladi Akopyan
-
-**Version** - 1.2.0
