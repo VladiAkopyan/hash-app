@@ -5,7 +5,7 @@ A program that allows you to create hashes from the text you enter. You also hav
 
 Four hashing algorithms are available: SHA-224, SHA-256, SHA-384, SHA-512.
 
-> **Warning**<br>
+> [!WARNING]
 > This program performs only one task — *hashing data*. It does not provide any other security-related services.
 
 ## Program Updates
