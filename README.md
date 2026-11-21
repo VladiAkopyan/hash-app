@@ -1,4 +1,6 @@
-# **Hash-App**
+<h1 align="center">
+  Hash-App
+</h1>
 ## Welcome to [Hash-App](https://github.com/VladiAkopyan/hash-app)
 
 A program that allows you to create hashes from the text you enter. You also have the option to add a salt to make cracking your hash more difficult.
